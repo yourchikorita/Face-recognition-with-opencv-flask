@@ -61,7 +61,7 @@ def check():
                                    
                             
                 confidence_print = "  {0}%".format(round(100 - confidence))
-            if (confidence < 70):
+            if (confidence < 60):
                 print('under 80')
                 check_attendance.add(id)
             

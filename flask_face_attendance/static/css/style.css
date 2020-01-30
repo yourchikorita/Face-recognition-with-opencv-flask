@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap');
 body{
-    background-color: pink;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.container{
+    width: 50%;
+    text-align: center;
+}
+
+#title{
+    font-size: 50px; 
+    font-weight: bold
+}
+
+.check_list{
+    background-color: #dcdcdc40; 
+    padding: 20px;
+    height:700px;
+}
+
+
+@media (max-width: 720px) {
+    .container{
+        width:100%
+    }
 }
