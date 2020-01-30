@@ -7,7 +7,14 @@
     <title>face_recognition</title>
 </head>
 <body>
-    <h1>출석한사람 </h1>
-    {{check_attendance}}
+    <h1>출석부 </h1>
+    <h3>{{check_attendance|length}}명 출석 완료</h3>
+    
+
+    {% for value in check_attendance %}
+    <dt>{{value}}</dt>
+    {% endfor %}
+
+
 </body>
 </html>
