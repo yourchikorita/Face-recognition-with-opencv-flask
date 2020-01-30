@@ -5,8 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>face_recognition</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <!-- 부가적인 테마 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 </head>
 <body>
+<<<<<<< HEAD
     <h1>출석부 </h1>
     <h3>{{check_attendance|length}}명 출석 완료</h3>
     
@@ -16,5 +21,20 @@
     {% endfor %}
 
 
+=======
+      
+    <div class="container" >    
+        <h1 id='title'>출 석 부</h1>  
+        <p style="text-align: right;">{{date}}</p>
+        <div class="check_list" > 
+            <h3>총 {{check_attendance|length}}명 출석 완료!</h3> <br/>
+            <h4><출석 명단></h4>
+            {% for value in check_attendance %}
+            <dt>{{value}}</dt>
+            {% endfor %}
+        </div>   
+    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+>>>>>>> b8304e78f32f69df3eb6e1dde3be6da472798724
 </body>
 </html>
