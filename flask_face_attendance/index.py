@@ -5,7 +5,7 @@ from flask import Flask, render_template
 
 import cv2
 import numpy as np
-
+import time
 app = Flask(__name__)
 
 check_attendance=set([])
@@ -81,9 +81,9 @@ def check():
     print("\n [INFO] Exiting Program and cleanup stuff")
     cam.release()
     cv2.destroyAllWindows()
+    date = time.strftime('%Y-%m-%d', time.localtime(time.time()))
 
-
-    return render_template('face_recognition.html',check_attendance=check_attendance)
+    return render_template('face_recognition.html',check_attendance=check_attendance,date=date)
 
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
