@@ -4,7 +4,10 @@
 
 # Introduction
 opencv_face_recognition 폴더 : 개인의 얼굴을 학습시켜서 실시간 판별 (참고 :<a href="https://www.hackster.io/mjrobot/real-time-face-recognition-an-end-to-end-project-a10826">원문링크</a>)<br />
-check_attendance 폴더 : 얼굴인식을 활용한 출석체크 <br />
+flask_face_attendance 폴더 : 얼굴인식을 활용한 출석체크 <br /><br />
+
+출석 결과 페이지 예시<br />
+<img height="300px" src="attendance_result.png">
 
 # Requirements
 ### Hardware components
@@ -18,3 +21,4 @@ check_attendance 폴더 : 얼굴인식을 활용한 출석체크 <br />
   <li>OpenCV</li>
   <li>Python</li>
   </ol>
+  
